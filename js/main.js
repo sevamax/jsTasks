@@ -19,7 +19,7 @@ const personalMovieDB = {
 // console.log(countMessage);
 
 let i = 1;
-while(i < 3) {
+ do {
   let lastFilmFirst = prompt("Один из последних просмотренных фильмов");
   let rangeFirst = +prompt("На сколько оцените его?");
 
@@ -32,5 +32,5 @@ while(i < 3) {
     --i;
   }
   i++;
-}
+}while(i < 3)
 console.log(personalMovieDB);
