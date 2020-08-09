@@ -14,10 +14,11 @@ const personalMovieDB = {
   privat: false
 };
 
-let lastFilmFirst = prompt("Один из последних просмотренных фильмов");
-let rangeFirst = +prompt("На сколько оцените его?");
-let lastFilmSecond = prompt("Один из последних просмотренных фильмов");
-let rangesecond = +prompt("На сколько оцените его?");
+for(let i = 1; i < 3; i++) {
+  let lastFilmFirst = prompt("Один из последних просмотренных фильмов"),
+      rangeFirst = +prompt("На сколько оцените его?");
 
-personalMovieDB.movies[lastFilmFirst] = rangeFirst;
-personalMovieDB.movies[lastFilmSecond] = rangesecond;
+    personalMovieDB.movies[lastFilmFirst] = rangeFirst;
+    
+}
+console.log(personalMovieDB);
